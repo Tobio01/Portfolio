@@ -1,0 +1,574 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+} 
+
+@font-face {
+    font-family: 'heavyFont'; /* Nombre que asignarás a tu fuente */
+    src: url('Mont-HeavyDEMO.otf') format('opentype'); /* Ruta a tu fuente descargada */
+}
+@font-face {
+    font-family: 'lightFont'; /* Nombre que asignarás a tu fuente */
+    src: url('Mont-ExtraLightDEMO.otf') format('opentype'); /* Ruta a tu fuente descargada */
+}
+
+.headContainer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 1.5%;
+    
+    
+}
+
+.homeBtn,.skillsBtn,.proyectBtn,.contactBtn{
+    background-color: transparent;
+    border: none;
+    color: #0D0D0D;
+    font-size: 1.5em;
+    font-family: 'lightFont', sans-serif;
+    font-weight: bold;
+    transition: 1.3s;
+    max-width: 1fr;
+
+} 
+
+.homeBtn:hover,.skillsBtn:hover,.proyectBtn:hover,.contactBtn:hover{
+    transform: scale(0.9);
+    transition: 1.3s;
+}
+
+body{
+
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+
+
+}
+
+.home{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+}
+
+
+.textAboutMe{
+    width: 50%;  
+    text-align: justify;
+    margin-top: 7%;
+
+}
+.myselfImg{
+    width: 25%;
+    border-radius: 50%;
+    transition: 1.3s;
+    
+    
+}
+.myselfImg:hover{
+    
+    transform: scale(0.9);
+}
+
+.tittle{
+    font-size: 5em;
+    font-family: 'heavyFont', sans-serif;
+    color:#595959;
+    letter-spacing: 0.05em;
+    
+
+}
+.subTittle{
+    font-size: 3em;
+    font-family: 'lightFont', sans-serif;
+    margin-top: -1%;
+    font-style: italic;
+    color: #595959;
+    width: 100%;
+    border: 1px , solid;
+  
+    
+}
+.p{
+    font-size: 1.6em;
+    font-family:'heavyFont',  sans-serif;
+    margin-top: 2%;
+    color: #0D0D0D;
+    letter-spacing: 0.05em;
+    
+}
+
+.htmlLogo{
+  height: 15em;
+    transition: 1.3s;
+    border-radius: 10%; 
+    border: solid #F2F2F2; 
+    
+}
+.cssLogo{
+    height: 15em;
+    transition: 1.3s;
+    border-radius: 10%;
+    border: solid #F2F2F2;
+    
+}
+.jsLogo{
+    height: 15em;
+    transition: 1.3s;
+    border-radius: 10%; 
+    border: solid #F2F2F2;
+  
+}
+.javaLogo{
+    height: 15em;
+    transition: 1.3s;
+    border-radius: 10%; 
+    border: solid #F2F2F2;
+   
+}
+.gitLogo{
+    height: 15em;
+    transition: 1.3s;
+    border-radius: 10%; 
+    border: solid #F2F2F2;
+    
+}
+.phLogo{
+    height: 15em;
+    transition: 1.3s;
+    border-radius: 10%; 
+    border: solid #F2F2F2;
+   
+}
+
+
+
+.htmlLogo:hover{
+
+    transform: scale(0.9);
+    opacity: 100%;
+   
+}
+.cssLogo:hover{
+    transform: scale(0.9);
+    opacity: 100%;
+    
+}
+.jsLogo:hover{
+    transform: scale(0.9);
+    opacity: 100%;
+    
+}
+.javaLogo:hover{
+    transform: scale(0.9);
+    opacity: 100%;
+}
+.gitLogo:hover{
+    transform: scale(0.9);
+    opacity: 100%;
+    
+}
+.phLogo:hover{
+    transform: scale(0.9);
+    opacity: 100%;
+    
+}
+
+.technologies {
+    margin-top: 10%;
+    width: 100%;
+    height: 100vh;
+    background-color: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+.skillsTittle{
+    font-size: 3em;
+    font-family: 'heavyFont', sans-serif;
+    text-align: center;
+    color: #F2F2F2;
+   
+
+}
+div > img{
+width: 100%;
+height: auto;
+padding: 7%;
+
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+    );
+    gap: 2em;
+   padding: 5%;
+   margin-bottom: 5%;
+}
+
+
+.proyects{
+    margin-top: 10%;
+    width: 100%;
+    height: 100vh;
+    
+    background-color: #F2F2F2;
+}
+.proyectTittle{
+    font-size: 3em;
+    font-family: 'heavyFont', sans-serif;
+    text-align: center;
+    color: #0D0D0D;
+
+    
+}
+.proyectBox{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+ 
+}
+.subTittleProyectText{
+    font-size: 2em;
+    font-family: 'heavyFont', sans-serif;
+    text-align: justify;
+    color: #595959;
+    margin-top: 5%;
+    padding-left: 2%;
+    
+}
+.textProyect{
+    font-size: 1.3em;
+    width: 50%;
+    padding-left: 5%;
+    font-family: 'heavyFont', sans-serif;
+    text-align: justify;
+    color: #0D0D0D;
+    letter-spacing: 0.1em;
+    
+}
+
+
+.proyectImg{
+    width: 75%;
+    height: auto;
+    border: 2px solid #0D0D0D;
+    transition: 1.3s ;  
+   
+    border-radius: 1%;
+}
+.proyectImg:hover{
+    transform: scale(0.9);
+    
+}
+
+.contactMe{
+    
+    width: 100%;
+    height: 45vh;
+
+    background-color: #0D0D0D;
+    
+    
+}
+
+.contactTittle{
+    font-size: 3em;
+    font-family: 'heavyFont', sans-serif;
+    text-align: center;
+    color: #F2F2F2;
+    padding: 2%;
+    
+ 
+   
+}
+.contactBox{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   padding: 2%;
+
+
+    
+}
+
+.wspText{
+    margin-top: 5%;
+    width: 30%;
+    height: 20%;
+    font-family: 'heavyFont', sans-serif;
+     background-color: #F2F2F2;
+     
+}
+ .gmailText{
+     margin-top: 5%;
+     width: 50%;
+     height: 20%;
+     font-family: 'heavyFont', sans-serif;
+     background-color: #F2F2F2;
+    
+}
+  .gitHubText{
+     margin-top: 5%;
+     width: 20%;
+     height: 20%;
+     font-family: 'heavyFont', sans-serif;
+     background-color: #F2F2F2;
+    
+}
+  .inText{
+     margin-top: 5%;
+     width: 20%;
+     height: 20%;
+     font-family: 'heavyFont', sans-serif;
+     background-color: #F2F2F2;
+     
+}
+
+.wspText:hover{
+  background-color: #595959;
+  color: #F2F2F2;
+     
+}
+ .gmailText:hover{
+    background-color: #595959;
+    color: #F2F2F2;
+    
+}
+  .gitHubText:hover{
+    background-color: #595959;
+    color: #F2F2F2;
+}
+  .inText:hover{
+    background-color: #595959;
+    color: #F2F2F2;
+     
+}
+
+
+
+.inLogo{
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+   
+    transition: 1.3s;
+    
+}
+.wspLogo{
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+   
+    transition: 1.3s;
+}
+.gmailLogo{
+    width: 25%;
+    height: auto;
+    
+    transition: 1.3s;    
+}
+.gitHubLogo{
+    width: 25%;
+    height: auto;
+    
+    transition: 1.3s;
+}
+
+.inLogo:hover{
+    transform: scale(0.9);
+    
+    
+}
+.wspLogo:hover{
+    transform: scale(0.9);
+    
+}
+.gmailLogo:hover{
+    transform: scale(0.9);
+    
+    
+}
+.gitHubLogo:hover{
+    transform: scale(0.9);
+    
+}
+
+a{
+width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .headContainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .homeBtn, .skillsBtn, .proyectBtn, .contactBtn {
+        font-size: 1em; /* Ajustar el tamaño de fuente para dispositivos móviles */
+        margin-bottom: 1em; /* Espacio entre botones */
+    }
+
+    .home {
+        flex-direction: column; /* Colocar la imagen sobre el texto */
+        align-items: center; /* Centrar el contenido */
+    }
+
+    .textAboutMe {
+        width: 80%; /* Reducir el ancho del texto */
+    }
+
+    .myselfImg {
+        width: 50%; /* Reducir el tamaño de la imagen */
+    }
+
+    .images {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajustar el tamaño de las imágenes */
+    }
+    
+    .tittle {
+        font-size: 3em; /* Reducir el tamaño del título */
+    }
+
+    .subTittle {
+        font-size: 1.5em; /* Reducir el tamaño del subtítulo */
+        margin-top: 0; /* Eliminar el margen superior */
+    }
+
+    .p {
+        font-size: 1em; /* Reducir el tamaño del texto */
+        margin-top: 2%; /* Añadir un pequeño margen superior */
+    }
+
+    /* Estilos para los títulos y textos en otras secciones */
+    .skillsTittle, .proyectTittle, .contactTittle, .subTittleProyectText, .textProyect {
+        font-size: 2em; /* Reducir el tamaño de los títulos y textos */
+    }
+   
+
+    /* Ajustar estilos de los botones en la sección de contacto */
+    .wspText, .gmailText, .gitHubText, .inText {
+        font-size: 0.8em; /* Reducir el tamaño de fuente de los botones */
+    }
+       /* Otros estilos */
+
+    /* Ajustar el tamaño de fuente de los títulos y textos en la sección de proyectos */
+    .proyectTittle {
+        font-size: 2.5em; /* Reducir el tamaño del título */
+    }
+
+    .subTittleProyectText {
+        font-size: 1.2em; /* Reducir el tamaño del subtítulo */
+        margin-top: 0; /* Eliminar el margen superior */
+        padding-left: 0; /* Eliminar el relleno izquierdo */
+    }
+
+    .textProyect {
+        font-size: 1em; /* Reducir el tamaño del texto */
+        padding-left: 0; /* Eliminar el relleno izquierdo */
+    }
+    .proyectBox {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+    }
+
+    .proyectImg {
+        order: -1; /* Cambiar el orden de la imagen para que aparezca antes en la columna */
+        margin-bottom: 20px; /* Agregar margen inferior para separar la imagen del texto */
+    }
+
+    /* Estilos para el párrafo de la sección de proyectos */
+    .proyectBox .textProyect p {
+        font-size: 0.9em; /* Reducir el tamaño del párrafo */
+        margin-top: 10px; /* Agregar margen superior */
+    }
+       /* Otros estilos */
+
+    /* Ajustes para la sección de contacto */
+    .contactBox {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+    }
+
+    /* Ajustes para los botones de contacto */
+    .contactBox a {
+        margin-bottom: 20px; /* Agregar margen inferior a los enlaces */
+    }
+
+    /* Estilos para los botones de contacto */
+    .contactBox button {
+        font-size: 0.8em; /* Reducir el tamaño de fuente de los botones */
+        width: auto; /* Permitir que los botones se ajusten automáticamente al contenido */
+        padding: 8px 12px; /* Ajustar el relleno de los botones */
+    }
+
+    /* Estilos para los logotipos de redes sociales */
+    .contactBox img {
+        width: 50px; /* Reducir el tamaño de los logotipos */
+        height: 50px;
+    }
+    .contactMe {
+        height: auto; /* Establecer altura automática para expandirse según el contenido */
+        min-height: 100vh; /* Establecer una altura mínima para ocupar al menos toda la altura de la pantalla */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centrar contenido verticalmente */
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    /* Otros estilos */
+
+    /* Ajustes para las imágenes */
+    .proyectImg {
+        width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    }
+
+    /* Ajustes para los títulos */
+    .proyectTittle, .subTittleProyectText {
+        font-size: 1.5em; /* Reducir el tamaño de fuente de los títulos */
+        margin-top: 10px; /* Aumentar el margen superior entre títulos */
+    }
+    .contactMe{
+        margin-top: 15%;
+    }
+    .skillsTittle {
+        font-size: 2em; /* Reducir el tamaño de fuente del título */
+        margin-bottom: 5%;
+        color: #0D0D0D;
+    }
+}
+
+/* Media query para tablets y pantallas más grandes */
+@media screen and (min-width: 769px) {
+    .textAboutMe {
+        width: 50%; /* Ancho original del texto */
+    }
+
+    .myselfImg {
+        width: 25%; /* Ancho original de la imagen */
+    }
+}
