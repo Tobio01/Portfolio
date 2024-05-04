@@ -420,6 +420,21 @@ padding: 7%;
 a{
 width: 100%;
 }
+
+@media screen and (max-width: 1500px) {
+   .myselfImg{
+    width: 25%;
+    height: 25%;
+    margin-top: 9%;
+   }
+}
+@media screen and (max-width: 1100px) {
+    .myselfImg{
+     width: 25%;
+     height: 25%;
+    margin-top: 30%;
+    }
+ }
 @media screen and (max-width: 768px) {
     .headContainer {
         flex-direction: column;
@@ -442,6 +457,7 @@ width: 100%;
 
     .myselfImg {
         width: 50%; /* Reducir el tamaño de la imagen */
+   
     }
 
     .images {
@@ -568,7 +584,4 @@ width: 100%;
         width: 50%; /* Ancho original del texto */
     }
 
-    .myselfImg {
-        width: 25%; /* Ancho original de la imagen */
-    }
 }
